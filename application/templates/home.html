@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LuciAI</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <div class="chat-container">
+    <div class="chat-header">
+      <h2>LuciAI</h2>
+    </div>
+    <div id="chat-body" class="chat-body"></div>
+    <form id="message-form" class="chat-input">
+      <input type="text" id="text" name="query" placeholder="Type your message..." autocomplete="off" required />
+      <button type="submit" id="send">Send</button>
+    </form>
+  </div>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
